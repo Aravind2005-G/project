@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <title>calculator app</title>
+
+    <head>
+
+    <body>
+        <div>
+            <form>
+                <label>enter first number</label>
+                <input id="first"></br>
+                <label>enter second number</label>
+                <input id="second">
+            </form></br>
+            <select id="operator">
+                <option></option>
+                <option>+</option>
+                <option>-</option>
+                <option>/</option>
+                <option>*</option>
+            </select>
+            <button onclick="calculate()">submit </button>
+            <h2>result:</h2>
+            <h1 id="resultText"></h1>
+            </form>
+        </div>
+        <script>
+            function calculate() {
+                let no1 = parseInt(document.getElementById("first").value);
+                let no2 = parseInt(document.getElementById("second").value);
+                let op = document.getElementById("operator").value;
+                document.getElementById("resultText").innerText = result;
+                var result = 0;
+                if (op == "+") {
+                    result = no1 + no2;
+                }
+                else if (op == "-") {
+                    result = no1 - no2;
+                }
+                else if (op == "/") {
+                    result = no1 / no2;
+                }
+                else if (op == "*") {
+                    result = no1 * no2;
+                }
+                console.log(result)
+                document.getElementById("resultText").innerText = result;
+                event.preventDefault();
+            }
+
+
+        </script>
+        <a href="ara.html">
+            <img width="30" height="48" src="https://img.icons8.com/ios/48/circled-left--v1.png" alt="circled-left--v1"/>
+        </a>
+    </body>
+</head>
+</head>
+
+</html>
